@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Activity Portal</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #111; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; font-weight: bold; margin-bottom: 0.25rem; }
+    input, select { width: 100%; padding: 0.5rem; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { background: #2563eb; color: white; border: none; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 4px; cursor: pointer; }
+    section { margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Activity Portal</h1>
+    <nav aria-label="Main Navigation">
+      <a href="#events">Events</a> | <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Upcoming Events Section -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <article>
+        <h3>Tech Hackathon</h3>
+        <p>Date: December 5, 2026 &mdash; Engineering Block</p>
+      </article>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+      <h2>Register for an Event</h2>
+      <form action="#" method="POST">
+        
+        <div class="form-group">
+          <label for="full-name">Full Name *</label>
+          <input type="text" id="full-name" name="full_name" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">University Email *</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="event-select">Select Event *</label>
+          <select id="event-select" name="event" required aria-required="true">
+            <option value="">-- Choose an event --</option>
+            <option value="hackathon">Tech Hackathon</option>
+            <option value="fest">Arts Fest</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 University Student Affairs</p>
+  </footer>
+
+</body>
+</html>
